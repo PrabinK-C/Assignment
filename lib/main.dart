@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        initialRoute: TaskoveviewWidget.routeName,
         theme: ThemeData(
             textTheme: const TextTheme(
                 titleLarge: TextStyle(
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
             appBarTheme: const AppBarTheme(
                 centerTitle: true, color: Color.fromRGBO(216, 57, 171, 1))),
         routes: {
+          TaskoveviewWidget.routeName: (context) => TaskoveviewWidget(),
           Cardtbody.routeName: (context) => const Cardtbody(
                 title: '',
                 body: '',

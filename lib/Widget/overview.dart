@@ -12,6 +12,7 @@ enum Filteroptions {
 
 class TaskoveviewWidget extends StatefulWidget {
   const TaskoveviewWidget({super.key});
+  static const routeName = '/taskoverview';
 
   @override
   State<TaskoveviewWidget> createState() => _TaskoveviewWidgetState();
